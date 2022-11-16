@@ -63,7 +63,7 @@
       <section class="hero">
         <div class="conteiner">
           <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-          <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
+          <button class="hero-button " type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="advantage section">
@@ -334,6 +334,9 @@
           </ul>
         </div>
       </section>
+
+      <!-- CLIENTS -->
+
       <section class="section">
         <div class="conteiner">
           <h2 class="clients-title">Постійні клієнти</h2>
@@ -381,6 +384,7 @@
         </div>
       </section>
     </main>
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="conteiner footer-conteiner">
         <div class="main-footer-infirmation">
@@ -432,9 +436,23 @@
             </li>
           </ul>
         </div>
+        <div class="connect">
+         <p class="connect-title">
+          Підпишіться на розсилку
+         </p>
+         <form class="footer-form">
+          <button class="footer-form__btn">
+            Підписатися 
+            <svg class="footer-form__icon" width="24" height="24">
+            <use href="./symbol-defs.svg#icon-send"></use>
+          </svg></button>
+         </form>
+        </div>
       </div>
     </footer>
-    <!-- MODAL -->
+    <!==========
+    -- MODAL --
+    ============>
     <div class="backdrop is-hidden" data-modal >
       <div class="modal" >
         <button class="modal-btn" type="button" data-modal-close>
@@ -442,8 +460,48 @@
             <use href="./symbol-defs.svg#Vector"></use>
           </svg>
         </button>
+        
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+      <form class="modal-form">
+        <label class="form-label" >
+          <span class="label-name">Ім'я</span>
+          <input class="form-intut" type="name" >
+          <svg class="modal-logo">
+            <use href="./symbol-defs.svg#vector"></use>
+          </svg>
+          
+          
+        </label>
+        <label class="form-label" >
+          <span class="label-name">Телефон</span>
+          
+          <input class="form-intut" type="tel" >
+          <svg class="modal-logo" width 18>
+            <use href="./symbol-defs.svg#vector1"></use>
+          </svg>
+        </label>
+        <label  class="form-label" >
+          <span class="">Пошта</span>
+          
+          <input class="form-intut" type="email" >
+          <svg class="modal-logo">
+            <use href="./symbol-defs.svg#vector2"></use>
+          </svg>
+        </label>
+        <label class="form-label" >
+<textarea class="form-coment textarea"   
+ placeholder=" Введіть текст ">
+</textarea>
+</label>
+<label class="form-label">
+  <input type="chackbox">
+  <a href=""></a>
+</label>
+<button class="form-btn" type="button">Відправити</button>
+      </form>
+      
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./JS/modal.js"></script>
   </body>
 </html>
